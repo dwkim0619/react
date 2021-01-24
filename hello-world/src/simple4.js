@@ -24,16 +24,20 @@ class Container extends React.Component {
   render() {
     return (
       <div>
-        <LikeButton/>
-        <div style={{marginTop: 20}}>
+        <LikeButton />
+        <div style={{ marginTop: 20 }}>
           <span>현재 카운트 : </span>
           <span>{this.state.count}</span>
-          <button 
+          <button
             onClick={() => this.setState({ count: this.state.count + 1 })}
-          >증가</button>
-          <button 
-            onClick={() => this.setState({ count: this.state.count -1 1 })}
-          >감소</button>
+          >
+            증가
+          </button>
+          <button
+            onClick={() => this.setState({ count: this.state.count - 1 })}
+          >
+            감소
+          </button>
         </div>
       </div>
     );

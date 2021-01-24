@@ -1,0 +1,16 @@
+import "./App.css";
+import Button from "./Button3.js";
+import Box from "./Box3.js";
+
+function App() {
+  return (
+    <div className="App">
+      <Button size="big" />
+      <Button size="small" />
+      <Box size="big" />
+      <Box size="small" />
+    </div>
+  );
+}
+
+export default App;
